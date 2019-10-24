@@ -1,0 +1,43 @@
+#login {
+	height: 100%;
+	width: 100%;
+	// background-color: #e76482;
+	// background: #473899;
+	background-size: cover;
+
+	.container {
+		position: relative;
+
+		-webkit-transform: translateY(5%);
+		-ms-transform: translateY(5%);
+		transform: translateY(5%);
+
+		> .content {
+			max-width: 320px;
+			margin: 0 auto;
+
+			.logo {
+				max-width: 100px;
+				margin: 0.5rem auto 1rem auto;
+				img {
+					width: 100px;
+					height: 100px;
+				}
+			}
+
+			.button {
+				color: white;
+				&.login {
+					background: #e76482;
+				}
+				&.register {
+					background: #4c82cc;
+				}
+			}
+
+			.forgot {
+				text-align: center;
+			}
+		}
+	}
+}

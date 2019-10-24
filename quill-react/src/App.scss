@@ -1,0 +1,69 @@
+$primary: #e76482;
+$secondary: #473899;
+$tertiary: #4c82cc;
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 1.02em;
+}
+
+body {
+	margin: 0;
+	font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-weight: 300;
+
+	> .container {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+/**
+ * Semantic-UI Overrides for squareishness
+ */
+.ui.segment {
+	border-radius: 0;
+	box-shadow: none;
+}
+input {
+	border-radius: 0 !important;
+}
+.ui.button {
+	border-radius: 0;
+	&.primary {
+		background: $primary;
+		&:hover {
+			background: lighten($primary, 3%);
+		}
+		&:active {
+			background: darken($primary, 3%);
+		}
+	}
+	&.secondary {
+		background: $secondary;
+		&:hover {
+			background: lighten($secondary, 3%);
+		}
+		&:active {
+			background: darken($secondary, 3%);
+		}
+		&:focus {
+			background: $secondary;
+		}
+	}
+}
+
+.ui.form select {
+	height: 2.5em;
+}
+
+fieldset {
+	padding: 0;
+	border: none;
+}
+
+.ui.search > .results {
+	width: 100%;
+}
