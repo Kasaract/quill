@@ -1,7 +1,11 @@
 # Project
+## Angular
 db/
 node_modules/
 semantic/
+
+## React
+quill-react/node_modules/
 
 # Output
 app/client/build/
